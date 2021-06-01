@@ -52,6 +52,4 @@ jobs:
         file: "${{ env.dockerfilePath }}/Dockerfile"
         pull: true
         push: true
-        tags: |
-          ${{ env.containerRegistry }}/${{ env.imageRepository }}:${{ env.tag }}|
-       ${{ env.containerRegistry }}/${{ env.imageRepository }}:latest
+        tags: ${{ env.containerRegistry }}/${{ env.imageRepository }}:latest
