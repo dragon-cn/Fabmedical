@@ -10,7 +10,7 @@ on:
 
  # Configure workflow to also support triggering manually
  workflow_dispatch:
-   input
+   inputs:
      logLevel:
        description: 'Log level'
        required: true
